@@ -32,6 +32,7 @@ public class Principal {
         mar.setMaritimo("Barco 1");
         mar.establecerTarifa();
  
+        TiposTransporte tipos = new TiposTransporte();
         
         ArrayList<Transporte> lista = new ArrayList<>();
         lista.add(bus);
@@ -40,8 +41,6 @@ public class Principal {
         lista.add(ae);
         lista.add(mar);
         
-        TiposTransporte tipos = new TiposTransporte();
-        tipos.obtenerPromedioTarifas();
         tipos.establecerTransportes(lista);
         tipos.establecerPromedioTarifas();
         
